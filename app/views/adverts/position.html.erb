@@ -1,0 +1,28 @@
+<% content_for :viewSpecificHeader do %>
+  <script type="application/javascript">
+    var adverts = [
+      <% @adverts.each do |advert| %>
+        [<%= advert.x_position %>, <%= advert.y_position %>,"<%= advert.text %>","<%= advert.url %>","<%= advert.image.url %>"]<% unless advert == @adverts.last%>,<% end %>
+      <% end %>
+    ]
+    
+    var imageCursor = new Image();
+    imageCursor.src = "<%= @advert.image.url %>";
+  </script>
+  <script type="application/javascript" src="/javascripts/wall-position.js"></script>
+<% end %>
+
+<div>
+  <canvas id="canvas" class="donor-wall" width="639" height="419" ></canvas>
+</div>
+
+<% form_for @advert, :html => { :id => 'setPosition' } do |f| %>
+  <%= f.hidden_field :x_position %>
+  <%= f.hidden_field :y_position %>
+<% end %>
+
+<div class="text center">
+  <p>Click on the grid to position your advert, or <a id="position-automatically" href="#">click here</a> to position your advert automatically.</p>
+  </p>
+</div>
+

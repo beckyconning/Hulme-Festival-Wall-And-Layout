@@ -1,0 +1,26 @@
+<% content_for :viewSpecificHeader do %>
+  <script type="application/javascript">
+    var adverts = [
+      <% @adverts.each do |advert| %>
+        [<%= advert.x_position %>, <%= advert.y_position %>,"<%= advert.text %>","<%= advert.url %>","<%= advert.image.url %>"]<% unless advert == @adverts.last%>,<% end %>
+      <% end %>
+    ]
+  </script>
+  <script type="application/javascript" src="/javascripts/wall-view.js"></script>
+<% end %>
+
+<div>
+  <canvas id="canvas" class="donor-wall" width="639" height="419" ></canvas>
+</div>
+
+<div class="text center">
+  <p>
+    <%= link_to "Click here to advertise online and onsite.", new_advert_path %>
+  </p>
+  </p>
+</div>
+
+<div class="text center">
+  <p>Continue to the Hulme Festival Website.</p>
+  </p>
+</div>

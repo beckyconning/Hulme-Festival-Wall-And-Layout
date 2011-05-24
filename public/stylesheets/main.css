@@ -1,0 +1,118 @@
+body {
+	background-color: #B1C7CE;
+	background-image: url('../images/treasure.png');
+	background-position: center middle;
+	margin: 0;
+	padding: 0;
+	font-family: helvetica;
+}
+img {
+	margin-bottom: 15px;
+}
+div.bunting {
+	background-image: url('../images/bunting.png');
+	width: 100%;
+	height: 25px;
+	margin-top: 2px;
+	margin-bottom: 13px;
+}
+div.container.outer {
+	width: 640px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+div.header {
+  float: left;
+}
+div.header:first-child {
+  width: 250px;
+  vertical-align: bottom;
+  padding-right: 5px;
+}
+div.header img:not(:first-child) {
+  margin-left: 2px;
+}
+div.header:last-child {
+  margin-top: 72px;
+  margin-left: 25px;
+  width: 359px;
+  vertical-align: bottom;
+}
+div.clear {
+  clear: both;
+}
+div.text {
+	text-align: left;
+	border-radius: 4px;
+	padding-right: 8pt;
+	padding-left: 8pt;
+	vertical-align: middle;
+	display: inline-block;
+	margin-bottom: 20px;
+	color: #EBE6D1;
+	background-color: #333A58;
+	box-shadow: 4px 4px 0px #EBE6D1;
+	font-size: 12pt;
+	width: 620px;
+}
+div.text.alt {
+	text-align: left;
+	border-radius: 4px;
+	padding-right: 8pt;
+	padding-left: 8pt;
+	vertical-align: middle;
+	display: inline-block;
+	margin-bottom: 20px;
+	color: #333A58;
+	background-color: #EBE6D1;
+	box-shadow: 4px 4px 0px #333A58;
+	border: 1px solid #333A58;
+	font-size: 12pt;
+	width: 620px;
+}
+span.email {
+	color: #F80016;
+	text-shadow: 1px 1px 0px #EBE6D1;
+}
+a:link {
+  color: #F80016;
+	text-decoration: none;
+}
+a:visited {
+  color: #F80016;
+	text-decoration: none;
+}
+a:hover {
+  color: #F80016;
+	text-shadow: 1px 1px 0px #EBE6D1;
+	text-decoration: none;
+}
+
+div.text.center {
+	text-align: center;
+}
+
+div.tent {
+	display: inline-block;
+	margin-right: 12px;
+	vertical-align: middle;
+}
+img.sections {
+  float: right;
+}
+canvas.donor-wall {
+  background: url('../images/donor-grid-bg.png');
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #333A58;
+  box-shadow: 4px 4px 0px #333A58;
+}
+form#setPosition {
+  visibility: hidden; 
+}
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}

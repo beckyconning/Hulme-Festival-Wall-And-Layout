@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  x_position: 1
+  y_position: 1
+  text: MyString
+  url: MyString
+  paid: false
+
+two:
+  x_position: 1
+  y_position: 1
+  text: MyString
+  url: MyString
+  paid: false

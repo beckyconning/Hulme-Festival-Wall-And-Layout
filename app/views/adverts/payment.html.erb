@@ -1,0 +1,27 @@
+<% content_for :viewSpecificHeader do %>
+  <script type="application/javascript">
+    var adverts = [
+      <% @adverts.each do |advert| %>
+        [<%= advert.x_position %>, <%= advert.y_position %>,"<%= advert.text %>","<%= advert.url %>","<%= advert.image.url %>"]<% unless advert == @adverts.last%>,<% end %>
+      <% end %>
+    ]
+  </script>
+  <script type="application/javascript" src="/javascripts/wall-view.js"></script>
+<% end %>
+
+<div>
+  <canvas id="canvas" class="donor-wall" width="639" height="419" ></canvas>
+</div>
+
+<div class="text center">
+  <p>This is a preview of what your advert will look like. When you hover over it it will show you your text, and when you click on it it will open a window to your URL. If you are happy with this, please click the button below to pay.</p>
+  </p>
+</div>
+
+<div class="text center">
+  <p>
+    <% form_tag pay_advert_path(@advert), :method => :post do %>
+      <%= submit_tag 'Click here to pay' %>
+    <% end %>
+  </p>
+</div>

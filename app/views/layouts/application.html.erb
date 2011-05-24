@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hulme Festival</title>
+	<meta name="author" content="Becky Conning">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+	<script type="application/javascript" src="/javascripts/jquery.js"></script>
+	<%= yield :viewSpecificHeader %>
+	<!-- Date: 2011-04-11 -->
+</head>
+<body>
+  <div class="bunting"></div>
+  <div class="container outer">
+    <div>
+     <div class="header">
+       <img src="/images/header.png" alt="Hulme Festival!"/>    
+     </div>
+     <div class="header">
+      <img src="/images/art.png" alt="Art" />
+      <img src="/images/seperator.png" alt="Art" />
+      <img src="/images/music.png" alt="Art" />
+      <img src="/images/seperator.png" alt="Art" />
+      <img src="/images/workshops.png" alt="Art" />
+      <img src="/images/seperator.png" alt="Art" />
+      <img src="/images/food.png" alt="Art" />
+    </div>
+    </div>
+    <div class="clear"></div>
+
+<%= yield %>
+
+    <img src="/images/logos.png" alt="
+      Venture Arts, 
+      Zion Arts, 
+      Hulme Community Garden Centre, 
+      City South Manchester Housing Trust,
+      Barclays,
+      The Big Life Group,
+      Manchester Creative Collective,
+      X Trax,
+      Manchester City Council
+    "/>
+  </div>
+</body>
+</html>
